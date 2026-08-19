@@ -1,0 +1,104 @@
+baseURL = 'https://wswswft.github.io/hugo-blog/'
+languageCode = 'zh-Hans'
+title = "wswswft 的博客"
+theme = 'stack'
+defaultContentLanguage = 'zh-cn'
+timeZone = 'Asia/Shanghai'
+hasCJKLanguage = true
+
+[pagination]
+pagerSize = 8
+
+[taxonomies]
+genre = 'categories'
+tag = 'tags'
+
+[params]
+mainSections = ['posts']
+favicon = '/hugo-blog/favicon.ico'
+
+[params.sidebar]
+emoji = '😀'
+subtitle = 'Ça ira, mon amour'
+avatar = { src = 'images/avatar.jpg' }
+
+[params.footer]
+since = 2023
+customText = '使用 Hugo + Stack 主题构建'
+
+[params.widgets]
+homepage = [
+  { type = 'search' },
+  { type = 'archives', params = { limit = 10 } },
+  { type = 'categories', params = { limit = 10 } },
+  { type = 'tag-cloud', params = { limit = 20 } },
+]
+
+page = [
+  { type = 'search' },
+  { type = 'toc' },
+  { type = 'categories', params = { limit = 10 } },
+  { type = 'tag-cloud', params = { limit = 20 } },
+]
+
+[params.comments]
+# 原 waline 服务端属于原仓库作者，fork 后默认关闭；接入自己的 Waline 服务后再启用
+enabled = false
+provider = 'waline'
+
+[params.comments.waline]
+serverURL = 'https://comment.shaobin-jiang.com'
+lang = 'zh-CN'
+emoji = [
+  'https://cdn.jsdelivr.net/gh/walinejs/emojis/bmoji',
+  'https://cdn.jsdelivr.net/gh/walinejs/emojis/bilibili',
+  'https://cdn.jsdelivr.net/gh/walinejs/emojis/tieba'
+]
+imageUploader = false
+requiredMeta = ["nick", "mail"]
+
+[params.colorscheme]
+toggle = true
+default = 'light'
+
+[params.article]
+toc = true
+
+[params.imageprocessing]
+cover = {enabled = false}
+content = {enabled = false}
+
+[menu]
+main = [
+  { name = '首页', url = '/', weight = 1, identifier = 'home', params = { icon = 'home', newTab = false } },
+  { name = '归档', url = '/page/archives', weight = 2, identifier = 'archive', params = { icon = 'archives', newTab = false } },
+  { name = '友链', url = '/page/links', weight = 3, identifier = 'links', params = { icon = 'link', newTab = false } },
+]
+
+social = [
+  { identifier = 'github', name = 'GitHub 主页', url = 'https://github.com/Shaobin-Jiang', params = { icon = 'brand-github', newTab = true } },
+  { identifier = 'rss', name = 'RSS 订阅', url = '/index.xml', params = { icon = 'rss', newTab = false } }
+]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 2
+
+[markup.highlight]
+noClasses = false
+codeFences = true
+guessSyntax = true
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = true
+tabWidth = 4
+
+[outputs]
+home = ['html', 'rss']
+section = ['html']
+taxonomy = ['html']
+term = ['html']
