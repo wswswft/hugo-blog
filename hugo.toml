@@ -59,7 +59,7 @@ requiredMeta = ["nick", "mail"]
 
 [params.colorscheme]
 toggle = true
-default = 'light'
+default = 'dark'
 
 [params.article]
 toc = true
