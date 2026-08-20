@@ -5,6 +5,8 @@ theme = 'stack'
 defaultContentLanguage = 'zh-cn'
 timeZone = 'Asia/Shanghai'
 hasCJKLanguage = true
+# 从 git 提交历史自动填充 date（首次提交）与 lastmod（最近提交），front matter 显式值优先
+enableGitInfo = true
 
 [pagination]
 pagerSize = 8

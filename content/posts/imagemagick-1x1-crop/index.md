@@ -2,7 +2,6 @@
 title: 把图片裁成以人物为中心的 1:1 头像
 description: 从一行 ImageMagick 命令，到 AI 视觉模型与人脸关键点算法
 date: 2026-08-20 09:57:00
-lastmod: 2026-08-20 09:57:00
 image: cropped-1x1.png
 categories:
   - Tools
