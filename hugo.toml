@@ -18,8 +18,7 @@ mainSections = ['posts']
 favicon = '/hugo-blog/favicon.ico'
 
 [params.sidebar]
-emoji = '😀'
-subtitle = 'Ça ira, mon amour'
+subtitle = '极限，至臻'
 avatar = { src = 'images/avatar.jpg' }
 
 [params.footer]
@@ -47,7 +46,7 @@ enabled = false
 provider = 'waline'
 
 [params.comments.waline]
-serverURL = 'https://comment.shaobin-jiang.com'
+serverURL = ''
 lang = 'zh-CN'
 emoji = [
   'https://cdn.jsdelivr.net/gh/walinejs/emojis/bmoji',
@@ -76,7 +75,7 @@ main = [
 ]
 
 social = [
-  { identifier = 'github', name = 'GitHub 主页', url = 'https://github.com/Shaobin-Jiang', params = { icon = 'brand-github', newTab = true } },
+  { identifier = 'github', name = 'GitHub 主页', url = 'https://github.com/wswswft', params = { icon = 'brand-github', newTab = true } },
   { identifier = 'rss', name = 'RSS 订阅', url = '/index.xml', params = { icon = 'rss', newTab = false } }
 ]
 
